@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="Head mb-2">
+            <div class="cityname">--</div>
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title text-center" style="font-size: 80px;"><strong>-</strong></h5>
+            <div class="header ">
+                <p class="card-text" style="font-size: 25px;">--</p>
+                <p class="spann" style="font-size: 23px;">-°/-°</p>
+            </div>
+
+            <div class="AirQ">
+                <div class="card-header-bg" style="margin-left:14px; margin-top:10px;font-family: Poppins, sans-serif;"><strong>Air quality</strong></div>
+                <div class="card-body">
+                    <h5 class="card-title-AQ">--</h5>
+                    <p class="card-text-AQ" style="margin-bottom: 0px;" >----</p>
+                </div>
+            </div>
+            
+            <div class="Percipitation">
+                <div class="card-header-bg" style="margin-left:14px; margin-top:10px;font-family: Poppins, sans-serif;"><strong>Percipitation </strong></div>
+                <div class="card-body">
+                    <h5 class="card-title-Prec" style="font-size: 18px;">--</h5>
+                    <p class="card-text-prec" style="margin-bottom: 0px;">----</p>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="forecast mx-4">
+            <div class="card">
+                <div class="card-header-bg" style="margin-left:14px; margin-top:10px;font-family: Poppins, sans-serif;"><strong>Feels like</strong></div>
+                <div class="card-body">
+                    <h4 class="card-title-1">-°C</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header-bg" style="margin-left:14px; margin-top:10px;font-family: Poppins, sans-serif;"><strong>Pressure</strong></div>
+                <div class="card-body">
+                    <h4 class="card-title-2">-</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header-bg" style="margin-left:14px; margin-top:10px;font-family: Poppins, sans-serif;"><strong>Humidity</strong></div>
+                <div class="card-body">
+                    <h4 class="card-title-3">-%</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header-bg" style="margin-left:14px; margin-top:10px;font-family: Poppins, sans-serif;"><strong>Visibility</strong></div>
+                <div class="card-body">
+                    <h4 class="card-title-4">-km</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header-bg" style="margin-left:14px; margin-top:10px;font-family: Poppins, sans-serif;"><strong>Wind speed</strong></div>
+                <div class="card-body">
+                    <h4 class="card-title-5">-km/h</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header-bg" style="margin-left:14px; margin-top:10px;font-family: Poppins, sans-serif;"><strong>UV</strong></div>
+                <div class="card-body">
+                    <h4 class="card-title-6">-</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="sun mt-4">
+            <div class="sunrise">
+                <h1>Sunrise</h1>
+                <p id="sunrise">--:-- (IST)</p>
+            </div>
+            <div class="sunset">
+                <h1>Sunset</h1>
+                <p id="sunset">--:-- (IST)</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
