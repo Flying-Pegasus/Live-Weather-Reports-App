@@ -1,7 +1,7 @@
 // const loc= "mumbai";
 const loc = prompt("Enter your city");
-let apikeymain =  REACT_API_MAIN//"0dad96422d88b41c0ddb0e5684709925";
-let apikeymaintwo =REACT_API_MAIN_TWO //"3LS66EGSDE5VEEFDXZQMUY9DP";
+let apikeymain = "0dad96422d88b41c0ddb0e5684709925";//REACT_API_MAIN//"0dad96422d88b41c0ddb0e5684709925";
+let apikeymaintwo ="3LS66EGSDE5VEEFDXZQMUY9DP"; //REACT_API_MAIN_TWO //"3LS66EGSDE5VEEFDXZQMUY9DP";
 
 const getData = async () => {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${loc}&appid=${apikeymain}`;
