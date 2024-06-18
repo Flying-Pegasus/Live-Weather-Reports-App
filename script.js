@@ -1,5 +1,5 @@
-const loc = prompt("Enter your city");
 // const loc= "mumbai";
+const loc = prompt("Enter your city");
 
 const getData = async () => {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${loc}&appid=0dad96422d88b41c0ddb0e5684709925`;
