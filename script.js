@@ -1,11 +1,14 @@
 // const loc= "mumbai";
 const loc = prompt("Enter your city");
+const apiKeyMain = process.env.REACT_APP_API_MAIN
+const apiKeyMaintwo = process.env.REACT_APP_API_MAIN2
+
 
 const getData = async () => {
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${loc}&appid=0dad96422d88b41c0ddb0e5684709925`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${loc}&appid=${apiKeyMain}`;
     let data = await fetch(url);
     let parsedData = await data.json();
-    let urlDes = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${parsedData.coord.lat},${parsedData.coord.lon}?key=3LS66EGSDE5VEEFDXZQMUY9DP`;
+    let urlDes = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${parsedData.coord.lat},${parsedData.coord.lon}?key=${apiKeyMaintwo}`;
     let dataDes = await fetch(urlDes);
     let parsedDataDes = await dataDes.json();
     document.querySelector(".cityname").innerText = parsedData.name.toUpperCase();
@@ -22,7 +25,7 @@ const getData = async () => {
     document.querySelector("#sunset").innerText = parsedDataDes.days[0].sunset.slice(0,5);
     document.querySelector(".card-text-prec").innerText = parsedDataDes.days[0].description;
     document.querySelector(".card-title-Prec").innerText = parsedDataDes.currentConditions.precipprob +"% chance of percipitation now";
-    let urlAQ = `http://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=${parsedData.coord.lat}&lon=${parsedData.coord.lon}&appid=0dad96422d88b41c0ddb0e5684709925`;
+    let urlAQ = `http://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=${parsedData.coord.lat}&lon=${parsedData.coord.lon}&appid=${apiKeyMain}`;
     let dataAQ = await fetch(urlAQ);
     let parsedDataAQ = await dataAQ.json();
     const aqi = parsedDataAQ.list[0].main.aqi;
